@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "Docodemo EasyMDE",
+  "version": "1.0.0",
+  "description": "Replace all textarea with EasyMDE",
+  "author": "j3iiifn",
+  "content_scripts": [{
+    "matches": ["https://github.com/*"],
+    "js": [
+      "easymde.min.js",
+      "content.js"
+    ],
+    "css": ["easymde.min.css"]
+  }]
+}
